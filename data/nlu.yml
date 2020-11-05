@@ -1,92 +1,54 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: bonjour
   examples: |
-    - hey
+    - bonjour
+    - bjr
+    - bsr
+    - bonsoir
+    - salut
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hey
+    - salam
+    - cc
+    - coucou
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
     - good by
-    - cee you later
-    - good night
+    - bonne journée
+    - bonne soirée
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - a plus
+    - merci
+    - au revoir
 
-- intent: affirm
+- intent: congepaye
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - combien j'ai de congé payé par an
+    - total de congé payé annuel
+    - nombre de jours de congé par an
+    - la durée total du congé annuel
+    - solde des congés
 
-- intent: deny
+- intent: TypesAbsence
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - quelles sont les types d'absences
+    - les absences possibles
+    - les types d'absences
+    - quelles sont les raisons pour s'absenter
+    - raisons d'absence
+    - en quels cas je peux m'absenter
+    - quand est ce que j'ai droit de m'absenter
+    - quelles sont les absences possibles
 
-- intent: mood_great
+- intent: EvenementsFamiliaux
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - m'absenter en cas d'urgence familiale
+    - quelles sont les types d'Evenements familiaux où je peux m'absenter
+    - s'absenter en cas de décès
+    - m'absenter en cas de mariage
+    - combien de jours je peux m'absenter en cas de décès

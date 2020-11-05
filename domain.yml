@@ -2,29 +2,32 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
+- bonjour
 - goodbye
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
+- congepaye
+- TypesAbsence
+- EvenementsFamiliaux
 responses:
-  utter_greet:
+  utter_bonjour:
   - buttons:
-    - payload: /mood_great
-      title: Good
-    - payload: /mood_unhappy
-      title: Sad
-    text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+    - payload: /congepaye
+      title: Congé payé
+    - payload: /TypesAbsence
+      title: Type absence
+    - payload: /EvenementsFamiliaux
+      title: Evenements Familiaux
+    text: "Bonjour, je suis votre assistant RH virtuel. Je suis disponible 24/7. J'espère\
+      \ vous vous allez bien. Voulez-vous vous renseigner sur :"
+  utter_congepaye:
+  - text: Hormis le repos hebdomadaire samedi et dimanche, tous les collaborateurs
+      PCA (CDI + ANAPEC) ont droit à 1,5 jour ouvrable par mois de travail effectif,
+      soit un total de 18 jours ouvrables par an.
+  utter_EvenementsFamiliaux:
+  - text: Le collaborateur bénéficie de permissions d’absence en cas d’événements
+      familiaux. La durée de ces absences est 2 à 4 jours en cas de mariage, et 2
+      à 3 jours en cas de décés.
+  utter_TypesAbsence:
+  - text: "Il y a 5 types d'absences à savoir: - Le congé payé - Evenements familiaux\
+      \ - Maternité - Paternité - Arrêt maladie"
   utter_goodbye:
   - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
